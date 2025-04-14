@@ -12,13 +12,14 @@ struct FriendView: View {
     let friendToShow: Friend
     
     var body: some View {
-        HStack{
+        VStack{
             Image(friendToShow.profilePicture)
                 .resizable()
                 .scaledToFit()
                 .frame(width: 150)
                 .padding(.trailing, 20)
             Text(friendToShow.username)
+            Text(friendToShow.title)
             Text(friendToShow.bio)
                 
             

@@ -13,7 +13,7 @@ struct SettingsView: View {
         
         NavigationStack {
             List {
-                NavigationLink(destination: FriendsListView(friends: [myers,gordon,ayo]), label: {
+                NavigationLink(destination: FriendsListView(), label: {
                     Text("Friends")
                 })
                 

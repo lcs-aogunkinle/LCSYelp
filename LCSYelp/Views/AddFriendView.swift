@@ -12,11 +12,12 @@ struct AddFriendView: View {
     @State private var Username: String = ""
     @State private var StudentID: String = ""
     @State private var searchText: String = ""
+    @State private var Title: String = ""
     
     
     // Allow binding to dimisssheet
     @Binding var dismissSheet: Bool
-    
+    @Binding var allFriends: [Friend]
     var body: some View {
         NavigationStack{
             Form {
@@ -33,6 +34,11 @@ struct AddFriendView: View {
                     Button {
                         // This will show the add friendView
                         dismissSheet = false
+                        
+                        
+                        // Add the friend
+                        allFriends.append(Friend(profilePicture: "", title: Title ,username: Username, usernameColor: .limeGreen, bio: "", bioColor: .red, totalPosts: ""))
+
                     } label: {
                     Text("Add")
                     }
@@ -44,5 +50,8 @@ struct AddFriendView: View {
 }
 
 #Preview {
-    AddFriendView(dismissSheet: Binding.constant(true))
+    AddFriendView(
+        dismissSheet: Binding.constant(true),
+        allFriends: Binding.constant([])
+    )
 }

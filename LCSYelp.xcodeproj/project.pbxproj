@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5704EDD42C21D4C100B65E37 /* AddSuggestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5704EDD32C21D4C100B65E37 /* AddSuggestionView.swift */; };
+		570C40D82DA012A900D39F48 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570C40D72DA012A900D39F48 /* Filter.swift */; };
+		570C41102DAC36A000D39F48 /* SearchFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570C410F2DAC36A000D39F48 /* SearchFilter.swift */; };
 		5733638D2C188DD7000A48C0 /* Yelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5733638C2C188DD7000A48C0 /* Yelp.swift */; };
 		5793AE892C13869200BFB097 /* LCSYelpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793AE882C13869200BFB097 /* LCSYelpApp.swift */; };
 		5793AE8B2C13869200BFB097 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793AE8A2C13869200BFB097 /* SettingsView.swift */; };
@@ -24,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		5704EDD32C21D4C100B65E37 /* AddSuggestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSuggestionView.swift; sourceTree = "<group>"; };
+		570C40D72DA012A900D39F48 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		570C410F2DAC36A000D39F48 /* SearchFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFilter.swift; sourceTree = "<group>"; };
 		5733638C2C188DD7000A48C0 /* Yelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yelp.swift; sourceTree = "<group>"; };
 		5793AE852C13869200BFB097 /* LCSYelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCSYelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5793AE882C13869200BFB097 /* LCSYelpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCSYelpApp.swift; sourceTree = "<group>"; };
@@ -50,9 +54,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		570C40D52DA0126100D39F48 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				570C410F2DAC36A000D39F48 /* SearchFilter.swift */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
 		5733638A2C188AA0000A48C0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				570C40D72DA012A900D39F48 /* Filter.swift */,
 				5733638C2C188DD7000A48C0 /* Yelp.swift */,
 				57F556812C1C94E800C91E97 /* Suggestion.swift */,
 				57F556832C1C999A00C91E97 /* AInfo.swift */,
@@ -77,6 +90,7 @@
 		5793AE7C2C13869200BFB097 = {
 			isa = PBXGroup;
 			children = (
+				570C40D52DA0126100D39F48 /* Functions */,
 				5793AE872C13869200BFB097 /* LCSYelp */,
 				5793AE862C13869200BFB097 /* Products */,
 			);
@@ -181,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57D93D522C21CD23007D9DF6 /* SuggestionsView.swift in Sources */,
+				570C40D82DA012A900D39F48 /* Filter.swift in Sources */,
 				57D8DA762C188074007554AA /* FriendsListView.swift in Sources */,
 				5704EDD42C21D4C100B65E37 /* AddSuggestionView.swift in Sources */,
 				57D93D502C21C4BE007D9DF6 /* SuggestionsFeedView.swift in Sources */,
@@ -188,6 +203,7 @@
 				57F556842C1C999A00C91E97 /* AInfo.swift in Sources */,
 				5793AE8B2C13869200BFB097 /* SettingsView.swift in Sources */,
 				57F556822C1C94E800C91E97 /* Suggestion.swift in Sources */,
+				570C41102DAC36A000D39F48 /* SearchFilter.swift in Sources */,
 				5793AE892C13869200BFB097 /* LCSYelpApp.swift in Sources */,
 				57F556802C1B562E00C91E97 /* AddFriendView.swift in Sources */,
 				5733638D2C188DD7000A48C0 /* Yelp.swift in Sources */,

@@ -10,7 +10,8 @@ import SwiftUI
 struct Friend: Identifiable {
     let id = UUID()
     let profilePicture: String
-    let username: String
+    let title: String
+    var username: String
     let usernameColor: Color
     let bio: String
     let bioColor:Color
@@ -18,16 +19,15 @@ struct Friend: Identifiable {
     
 }
 
+let FriendShip = [
 
-var myers = Friend(profilePicture:"Myers", username: "LCS123", usernameColor: .white, bio: "Bio: Grade 10 Rep. I love LCS", bioColor: .black, totalPosts: "Total posts: 172")
-var gordon = Friend(profilePicture: "Gordon", username: "TechWizz", usernameColor: .white, bio: "Bio:Coding genius lol", bioColor: .black, totalPosts: "Total Posts: 538")
-var ayo = Friend(profilePicture: "Ayo", username: "Greatest_student", usernameColor: .white, bio: " Bio: More life", bioColor: .black, totalPosts: "Total Posts: 39")
+Friend(profilePicture:"Myers", title: "Title: Student", username: " Username: LCS123", usernameColor: .white, bio: "Bio: Grade 10 Rep. I love LCS", bioColor: .black, totalPosts: "Total posts: 172"),
+Friend(profilePicture: "Gordon", title: "Title: Teacher", username: "Username: TechWizz", usernameColor: .white, bio: "Bio:Coding genius lol", bioColor: .black, totalPosts: "Total Posts: 538"),
+ Friend(profilePicture: "Ayo", title: "Title: Student", username: "Username: Greatest_student", usernameColor: .white, bio: " Bio: More life", bioColor: .black, totalPosts: "Total Posts: 39")
+ ]
+
+let myers = Friend(profilePicture:"Myers", title: "Title: Student", username: " Username: LCS123", usernameColor: .white, bio: "Bio: Grade 10 Rep. I love LCS", bioColor: .black, totalPosts: "Total posts: 172")
   
-let exampleFriends = [
-    myers,
-    gordon,
-    ayo
-]
 
 struct accountInfo: Identifiable {
     let id = UUID()
@@ -47,6 +47,7 @@ let exampleInfo = [
 struct Suggestions: Identifiable {
     let id = UUID()
     let profilePicture: String
+    let title: String
     let username: String
     let usernameColor: Color
     let suggestion : String
@@ -55,9 +56,9 @@ struct Suggestions: Identifiable {
     
 }
 
-let post = Suggestions(profilePicture: "Ayo", username: "Greatest_student", usernameColor: .black, suggestion: " Post:The school should add more combat sport co-curriculars ", postColor: .black)
-let post2 = Suggestions(profilePicture: "Gordon", username: "TechWizz", usernameColor: .black, suggestion: " Post:More frontend coding systems", postColor: .black)
-let post3 = Suggestions(profilePicture: "Myers", username: "LCS123", usernameColor: .black, suggestion: "Post: Basketball programs please Ms.Kee pleaseeeee", postColor: .black)
+let post = Suggestions(profilePicture: "Ayo", title: "Student" ,username: "Greatest_student", usernameColor: .black, suggestion: " Post:The school should add more combat sport co-curriculars ", postColor: .black)
+let post2 = Suggestions(profilePicture: "Gordon", title: "Teacher" ,username: "TechWizz", usernameColor: .black, suggestion: " Post:More frontend coding systems", postColor: .black)
+let post3 = Suggestions(profilePicture: "Myers", title: "Student", username: "LCS123", usernameColor: .black, suggestion: "Post: Basketball programs please Ms.Kee pleaseeeee", postColor: .black)
 
 let exampleSuggestion = [
   post,
